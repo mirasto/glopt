@@ -1,0 +1,168 @@
+@media (max-width: 1200px) {
+    .container{
+        max-width: 960px;
+    }
+    .header{
+        &__list{
+            &-links{
+                font-size: 12px;
+            }
+        }
+        &__contacts{
+            &-phone{
+                font-size: 17px;
+            }
+        }
+        &__title{
+            font-size: 68px;
+        }
+        &__item{
+            &-descr{
+                font-size: 14px;
+            }
+        }
+        
+    }
+    .advantages{
+        &__column{
+            grid-template-columns: 17% auto;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .container{
+        max-width: 720px;
+    }
+    .header{
+        &__item{
+            &-img{
+                &:last-child{
+                    margin-right: 20px;
+                }
+            }
+        }
+        &__wrapper{
+            grid-template-columns: 1fr 6fr 3fr 1fr;
+        }
+        &__list{
+            &-menu{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                row-gap: 15px;
+            }
+            &-links{
+                border-right: none;
+            }
+        }
+        &__contacts{
+            &-phone{
+                font-size: 14px;
+            }
+        }
+        &__subtitle{
+            font-size: 32px;
+        }
+        .btn__small{
+            width: 140px;
+        }
+        &__title{
+            font-size: 50px;
+        }
+        &__service{
+            grid-template-columns: repeat(2,1fr);
+            row-gap: 10px;
+            column-gap: 60px;
+        }
+        .dot{
+            &:before,&:after{
+                width: 300px;
+            }
+        }
+
+    }
+    .advantages{
+        &__wrapper{
+            grid-template-columns: repeat(1,1fr);
+
+        }
+    }
+}
+@media (max-width: 768px) {
+    .container{
+        max-width: 540px;
+    }
+    .header{
+        &__wrapper{
+            grid-template-columns: repeat(2,1fr);
+            row-gap: 15px;
+            
+        }
+        &__logo{
+            margin: 0 auto;
+            transform: translateX(140%);
+        }
+        &__text{
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        &__title{
+            font-size: 43px;
+        }
+        &__subtitle{
+            font-size: 25px;
+        }
+        &__list{
+            &-menu{
+                display: none;
+            }
+        }
+        .dot{
+            &::before,&::after{
+                width: 220px;
+            }
+        }
+    }
+    .advantages{
+        &__title{
+            font-size: 21px;
+        }
+    }
+
+}
+@media (max-width: 576px) {
+    .container{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .header{
+        &__logo{
+            transform: translateX(80%);
+        }
+        &__text{
+            font-size: 16px;
+        }
+        &__title{
+            font-size: 37px;
+        }
+        &__subtitle{
+            font-size: 20px;
+        }
+        &__service{
+            grid-template-columns: repeat(1,1fr);
+        }
+        .dot{
+            &::before,&::after{
+                width: 140px;
+            }
+        }
+    }
+    .advantages{
+        &__column{
+            grid-template-columns: 21% auto;
+        }
+        &__title{
+            font-size: 20px;
+        }
+    }
+}
+

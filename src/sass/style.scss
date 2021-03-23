@@ -1,0 +1,19 @@
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/bootstrap-reboot.min';
+@import 'blocks/header';
+@import 'blocks/advantages';
+@import 'blocks/delivery';
+@import 'blocks/service.scss';
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+@import 'base/media.scss';
