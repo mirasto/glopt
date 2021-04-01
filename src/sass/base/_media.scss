@@ -127,6 +127,20 @@
             font-size: 21px;
         }
     }
+    .delivery{
+        &__wrapper{
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 15px;
+        }
+        .title{
+            font-size: 22px;
+        }
+        &__subtitle{
+            font-size: 16px;
+        }
+
+
+    }
 
 }
 @media (max-width: 576px) {
@@ -142,7 +156,7 @@
             font-size: 16px;
         }
         &__title{
-            font-size: 37px;
+            font-size: 34px;
         }
         &__subtitle{
             font-size: 20px;
@@ -160,8 +174,16 @@
         &__column{
             grid-template-columns: 21% auto;
         }
-        &__title{
+        .title{
             font-size: 20px;
+        }
+    }
+    .delivery{
+        .title{
+            font-size: 20px;
+        }
+        &_subtitle{
+            font-size: 14px;
         }
     }
 }

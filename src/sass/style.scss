@@ -4,8 +4,11 @@
 @import 'blocks/header';
 @import 'blocks/advantages';
 @import 'blocks/delivery';
-@import 'blocks/service.scss';
-
+@import 'blocks/service';
+@import 'blocks/price';
+@import 'blocks/consultation';
+@import 'blocks/work';
+@import 'blocks/feed';
 .container{
     width: 1140px;
     margin: 0 auto;
@@ -13,7 +16,10 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
-
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
 
 
 @import 'base/media.scss';
