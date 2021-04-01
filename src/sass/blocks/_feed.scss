@@ -1,0 +1,20 @@
+.feed{
+    padding: 97px 0 65px 0;
+    &__item{
+        text-align: center;
+        width: 753px;
+        margin: 31px auto 0 auto;
+        &-title{
+            margin-top: 19px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #3a3a3a;
+        }
+        &-descr{
+            margin-top: 5px;
+            font-size: 14px;
+            font-weight: 300;
+            color:#898989;
+        }
+    }
+}

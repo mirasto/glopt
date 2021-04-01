@@ -1,0 +1,50 @@
+.consultation{
+    padding: 60px 0;
+    position: relative;
+    &__title{
+        text-align: center;
+        font-size: 28px;
+        line-height: 23px;
+        font-weight: 400;
+        color: #3a3a3a;
+    }
+    &__item{
+        border: 1px solid #898989;;
+        min-height: 180px;
+        display:block;
+        margin: 91px auto 0 auto;
+    }
+    &__img{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        padding: 20px 10px;
+        margin-top: 35px;
+        padding: 0 10px;
+    }
+    form{
+        text-align: center;
+        margin-top: 66px;
+        input{
+            border: 1px solid #898989;
+            border-radius: 50px;
+            outline: 0;
+            padding: 1% 0 12px 30px;
+            margin-bottom: 30px;
+        }
+    }
+    // &__btn{
+    //     position: relative;
+    // }
+    .btn{
+        position: absolute;
+        &__big{
+            @include btn;
+            padding: 18px 31px;
+            top: 77%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
