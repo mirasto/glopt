@@ -18,7 +18,7 @@
         }
         &__item{
             &-descr{
-                font-size: 14px;
+                font-size: 16px;
             }
         }
         
@@ -26,6 +26,13 @@
     .advantages{
         &__column{
             grid-template-columns: 17% auto;
+        }
+    }
+    .price{
+        &__item{
+            &-descr{
+                font-size: 14px;
+            }
         }
     }
 }
@@ -86,6 +93,44 @@
 
         }
     }
+    .price{
+        &__wrapper{
+            grid-template-columns: repeat(2,1fr);
+            row-gap: 20px;
+        }
+        
+        .subtitle{
+            font-size: 20px;
+        }
+    }
+    .questions{
+        &__wrapper{
+            width: 100%;
+        }
+        form{
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 0px 27% 0px;
+        }
+        &__btn{
+            bottom: 21%;
+        }
+    }
+    .footer{
+        &__descr{
+            font-size: 13px;
+        }
+    }
+    .consultation{
+        .btn__big{
+            top: 82%;
+        }
+    }
+    .service{
+        &__subtitle{
+            font-size: 18px;
+        }
+    }
 }
 @media (max-width: 768px) {
     .container{
@@ -97,16 +142,19 @@
             row-gap: 15px;
             
         }
+        &__service{
+            align-items: start;
+        }
         &__logo{
             margin: 0 auto;
             transform: translateX(140%);
         }
         &__text{
             margin-top: 20px;
-            font-size: 20px;
+            font-size: 19px;
         }
         &__title{
-            font-size: 43px;
+            font-size: 40px;
         }
         &__subtitle{
             font-size: 25px;
@@ -132,16 +180,75 @@
             grid-template-columns: repeat(1, 1fr);
             row-gap: 15px;
         }
-        .title{
-            font-size: 22px;
+        &__item{
+            &-subtitle{
+                font-size: 16px;
+            }
         }
-        &__subtitle{
-            font-size: 16px;
+        .title{
+            font-size: 21px;
+        }
+        .subtitle{
+            font-size: 18px;
         }
 
 
     }
+    form{
+        display: grid;
+        grid-template-columns: 80%;
+        justify-content: center;
 
+    }
+    .consultation{
+        .btn__big{
+            top: 84%;
+        }
+    }
+    .work{
+        &__inner{
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 20px;
+        }
+    }
+    .questions{
+        form{
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 10px 43% 0px;
+        }
+        &__btn{
+            bottom: 19%;
+        }
+    }
+    .footer{
+        &__present{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+        &__descr{
+            font-size: 12px;
+            margin-left: 0;
+            width: 50%;
+        }
+        &__contacts{
+            margin-left: 0;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+
+        }
+    }
+    .carousel-control-prev,.carousel-control-next{
+        width: 60%;
+    }
+    .feed{
+        &__item{
+            width: unset;
+            &-descr{
+                padding: 0 10px;
+            }
+        }
+    }
 }
 @media (max-width: 576px) {
     .container{
@@ -153,10 +260,10 @@
             transform: translateX(80%);
         }
         &__text{
-            font-size: 16px;
+            font-size: 14px;
         }
         &__title{
-            font-size: 34px;
+            font-size: 23px;
         }
         &__subtitle{
             font-size: 20px;
@@ -174,17 +281,113 @@
         &__column{
             grid-template-columns: 21% auto;
         }
+        &__item{
+            &-subtitle{
+                font-size: 13px;
+            }
+        }
         .title{
-            font-size: 20px;
+            font-size: 15px;
         }
     }
     .delivery{
         .title{
-            font-size: 20px;
+            font-size: 16px;
         }
-        &_subtitle{
-            font-size: 14px;
+        .subtitle{
+            font-size: 15px;
         }
+        &__item{
+            &-subtitle{
+                font-size: 14px;
+            }
+        }
+    }
+    .service{
+        &__subtitle{
+            font-size: 15px;
+        }
+    }
+    .price{
+        .title{
+            font-size: 19px;
+        }
+        .subtitle{
+            font-size: 19px;
+        }
+        &__wrapper{
+            grid-template-columns: repeat(1,1fr);
+        }
+        &__item{
+            &-descr{
+                font-size: 16px;
+            }
+        }
+    }
+    .consultation{
+        &__title{
+            font-size: 17px;
+        }
+        .btn__big{
+            font-size: 16px;
+            top: 84%;
+            padding: 2px 80px;
+        }
+        &__btn{
+            
+            margin-top: 40px;
+        }
+    }
+    .work{
+        .title{
+            font-size: 25px;
+        }
+        &__inner{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    .questions{
+        form{
+            padding: 10px 38% 0px;
+        }
+    }
+    .footer{
+        &__logo{
+            margin: 0 auto;
+        }
+        &__descr{
+            text-align: center;
+            margin: 14px auto 14px auto;
+        }
+        &__wrapper{
+            grid-template-rows: 1fr;
+            grid-template-columns: unset;
+        }
+        &__inner{
+            margin-right: 0;
+            text-align: center;
+        }
+        .btn__small{
+            margin: 7px auto 14px auto;
+        }
+    }
+    .feed{
+        .title{
+            font-size: 21px;
+            line-height: 34px;
+        }
+        .subtitle{
+            font-size: 17px;
+        }
+        &__item{
+            width: unset;
+            &-descr{
+                padding: 0 10px;
+            }
+        }
+    }
+    .carousel-control-prev,.carousel-control-next{
+        width: 35%;
     }
 }
 

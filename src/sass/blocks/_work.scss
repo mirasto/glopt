@@ -6,7 +6,7 @@
         display: grid;
         grid-template-columns:repeat(4, 1fr);
         column-gap: 46px;
-        align-items: center;
+        align-items: self-start;
         &-two{
             grid-template-columns: repeat(3,1fr);
         }
@@ -21,6 +21,7 @@
             color: $main-color;
         }
         &-subtitle{
+            margin-top: 5px;
             text-align: center;
             font-size: 14px;
             font-weight: 300;
